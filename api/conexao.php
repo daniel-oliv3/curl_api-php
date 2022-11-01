@@ -13,15 +13,15 @@ try {
     //Conexão sem a porta
     $conn = new PDO("mysql:host=$host;dbname=" . $dbname, $user, $pass);
 
-    echo "Conexão com o bando de dados realizada com sucesso!";
+    //echo "Conexão com o bando de dados realizada com sucesso!";
 }catch(PDOException $err){
-    echo "Erro: conexão com o bando de dados não foi realizada! Erro gerado " . $getMessage();
+    die("Erro: conexão com o bando de dados não foi realizada! Erro gerado " . $getMessage());
 }
 
 
 
 // http://localhost/curl_api-php/api/conexao.php
-
+// http://localhost/curl_api-php/api/index.php
 
 
 
